@@ -19,7 +19,6 @@ inputs:
 outputs:
   repo: 
     description: 'Git repository'
-    default: 'test'
 
 runs:
   using: 'docker'
