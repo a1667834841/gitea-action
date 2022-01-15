@@ -12,6 +12,6 @@ jobs:
 
     - name: commit repo
       id: commit_repo
-      uses: ./github/actions/commit
+      uses: ./.github/actions/commit
       with:
         repo: "https://github.com/mego22/dotfiles.git"
