@@ -10,6 +10,6 @@ jobs:
     steps:
     - name: commit repo
       id: commit_repo
-      uses: ./github/action/commit
+      uses: ./github/actions/commit
       with:
         repo: "https://github.com/mego22/dotfiles.git"
