@@ -5,9 +5,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    name: Get the sha from public repo
+    name: test
 
     steps:
+    - uses: actions/checkout@v1
+
     - name: commit repo
       id: commit_repo
       uses: ./github/actions/commit
