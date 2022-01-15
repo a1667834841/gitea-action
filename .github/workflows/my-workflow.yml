@@ -15,3 +15,6 @@ jobs:
       uses: ./.github/actions/commit
       with:
         repo: "https://github.com/mego22/dotfiles.git"
+
+    - name: print_outputs
+      run: echo "The repo is ${{ steps.commit_repo.outputs.repo }}"

@@ -16,6 +16,11 @@ inputs:
     required: true
     default: 'master'
 
+outputs:
+  repo: 
+    description: 'Git repository'
+    default: 'test'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
