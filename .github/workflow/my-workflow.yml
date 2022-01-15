@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  test-public-repo:
+
+    runs-on: ubuntu-latest
+
+    name: Get the sha from public repo
+
+    steps:
+    - name: commit repo
+      id: commit_repo
+      uses: ./github/action/commit
+      with:
+        repo: "https://github.com/mego22/dotfiles.git"
